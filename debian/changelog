@@ -1,0 +1,18 @@
+cuba (3.0+20111124-2) unstable; urgency=low
+
+  * Removed "duplicate" demo-c.out
+
+ -- Igor Pashev <pashev.igor@gmail.com>  Tue, 14 Feb 2012 11:23:40 +0400
+
+cuba (3.0+20111124-1) unstable; urgency=low
+
+  * New upstream release.
+  * Link shared library with other libs. (Closes: #659154)
+
+ -- Igor Pashev <pashev.igor@gmail.com>  Thu, 09 Feb 2012 00:04:19 +0400
+
+cuba (3.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #649076)
+
+ -- Igor Pashev <pashev.igor@gmail.com>  Thu, 17 Nov 2011 14:57:11 +0400

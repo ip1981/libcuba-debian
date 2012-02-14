@@ -1,0 +1,102 @@
+Source: cuba
+Section: math
+Priority: optional
+Maintainer: Igor Pashev <pashev.igor@gmail.com>
+Build-Depends:
+ debhelper  ( >= 8.1.3~),
+ libqt4-dev ( >= 4:4.6 ),
+Standards-Version: 3.9.2
+Homepage: http://www.feynarts.de/cuba/
+
+Package: libcuba3
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: library for multidimensional numerical integration
+ The Cuba library offers a choice of four independent routines for
+ multidimensional numerical integration: Vegas, Suave, Divonne, and
+ Cuhre.  They work by very different methods, first three are Monte Carlo
+ based. All four have a C/C++, Fortran interface and can integrate vector
+ integrands. Their invocation is very similar, so it is easy to substitute
+ one method by another for cross-checking. For further safeguarding, the
+ output is supplemented by a chi-square probability which quantifies the
+ reliability of the error estimate.
+ .
+ This package provides the shared libraries required to run programs compiled
+ with Cuba. To compile your own programs you also need to install libuba3-dev.
+
+
+Package: libcuba3-dev
+Section: libdevel
+Architecture: any
+Provides: libcuba-dev
+Depends: libcuba3 ( = ${binary:Version}),
+ ${misc:Depends}
+Suggests: libcuba-doc, cuba-partview
+Description: library for multidimensional numerical integration: development files
+ The Cuba library offers a choice of four independent routines for
+ multidimensional numerical integration: Vegas, Suave, Divonne, and
+ Cuhre.  They work by very different methods, first three are Monte Carlo
+ based. All four have a C/C++, Fortran interface and can integrate vector
+ integrands. Their invocation is very similar, so it is easy to substitute
+ one method by another for cross-checking. For further safeguarding, the
+ output is supplemented by a chi-square probability which quantifies the
+ reliability of the error estimate.
+ .
+ This package contains the header file, static library and symbolic links
+ that developers using Cuba will need.
+
+Package: cuba-partview
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: partition viewer for the Cuba library
+ Partview reads Cuba's verbose output from stdin and displays the
+ specified planes of the tessellation on screen.  Each pair of dimensions
+ is shown in a separate tab.
+ .
+ The Cuba library offers a choice of four independent routines for
+ multidimensional numerical integration: Vegas, Suave, Divonne, and
+ Cuhre.  They work by very different methods, first three are Monte Carlo
+ based. All four have a C/C++, Fortran interface and can integrate vector
+ integrands. Their invocation is very similar, so it is easy to substitute
+ one method by another for cross-checking. For further safeguarding, the
+ output is supplemented by a chi-square probability which quantifies the
+ reliability of the error estimate.
+
+Package: libcuba3-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Provides: libcuba-dbg
+Depends: libcuba3 ( = ${binary:Version}),
+ ${misc:Depends}
+Description: library for multidimensional numerical integration: debug symbols
+ The Cuba library offers a choice of four independent routines for
+ multidimensional numerical integration: Vegas, Suave, Divonne, and
+ Cuhre.  They work by very different methods, first three are Monte Carlo
+ based. All four have a C/C++, Fortran interface and can integrate vector
+ integrands. Their invocation is very similar, so it is easy to substitute
+ one method by another for cross-checking. For further safeguarding, the
+ output is supplemented by a chi-square probability which quantifies the
+ reliability of the error estimate.
+ .
+ This package contains debugging symbols for libcuba3.
+
+
+Package: libcuba-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: library for multidimensional numerical integration: documentation
+ The Cuba library offers a choice of four independent routines for
+ multidimensional numerical integration: Vegas, Suave, Divonne, and
+ Cuhre.  They work by very different methods, first three are Monte Carlo
+ based. All four have a C/C++, Fortran interface and can integrate vector
+ integrands. Their invocation is very similar, so it is easy to substitute
+ one method by another for cross-checking. For further safeguarding, the
+ output is supplemented by a chi-square probability which quantifies the
+ reliability of the error estimate.
+ .
+ This package includes documentation and examples for the Cuba library.
+

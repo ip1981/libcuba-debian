@@ -1,0 +1,29 @@
+.TH cuba-partview 1 "November 2011" "" "Cuba - a library for multidimensional numerical integration"
+
+.SH NAME
+cuba-partview \- partition viewer for the Cuba library
+
+.SH SYNOPSIS
+.B cuba-partview
+.I N 
+.I M
+[...] < 
+.I file
+
+.SH DESCRIPTION
+.B cuba-partview
+reads Cuba's verbose output from stdin and displays
+the N-M plane of the tessellation on screen. Each pair of dimensions is shown in a separate tab.
+
+To use this utility you should pass verbosility flag to Cuba's routines, and that flags should be set to 3.
+With verbosility set to 3 the program will print to stdout data, that is used as input for
+.B cuba-partview
+\.
+
+.SH SEE ALSO
+Documentation for Cuba library and examples are in package
+.I libcuba-doc
+
+.SH AUTHOR
+This man page is written by Igor Pashev
+.I <pashev.igor@gmail.com>
