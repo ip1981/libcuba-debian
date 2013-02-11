@@ -1,3 +1,9 @@
+cuba (3.0+20111124-3) UNRELEASED; urgency=low
+
+  * Updated debian/copyright: GPL -> LGPL
+
+ -- Igor Pashev <pashev.igor@gmail.com>  Sun, 26 Feb 2012 13:14:45 +0400
+
 cuba (3.0+20111124-2) unstable; urgency=low
 
   * Removed "duplicate" demo-c.out
