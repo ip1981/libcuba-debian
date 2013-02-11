@@ -1,6 +1,9 @@
 cuba (3.0+20111124-3) UNRELEASED; urgency=low
 
   * Updated debian/copyright: GPL -> LGPL
+  * Bump standards version to 3.9.4
+  * Use dpkg build flags
+  * Changes section for libcuba3: math -> libs
 
  -- Igor Pashev <pashev.igor@gmail.com>  Sun, 26 Feb 2012 13:14:45 +0400
 
