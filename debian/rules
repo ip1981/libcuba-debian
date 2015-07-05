@@ -11,14 +11,6 @@ LIB := $(shell dh_listpackages | head -n 1)
 override_dh_compress:
 	dh_compress -X .pdf -X demo
 
-override_dh_strip:
-	dh_strip --dbg-package=$(LIB)-dbg
-
-override_dh_installdocs:
-	dh_installdocs -p $(LIB)-dbg --link-doc=$(LIB)
-	dh_installdocs -p $(LIB)-dev --link-doc=$(LIB)
-	dh_installdocs --remaining-packages
-
 override_dh_auto_build:
 	dh_auto_build
 	mv partview cuba-partview
